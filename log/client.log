@@ -1,0 +1,32 @@
+2018-11-12 11:37:56,841 - INFO - client - Initialization
+2018-11-12 11:37:58,750 - INFO - client - Connecting localhost
+2018-11-12 11:37:58,760 - INFO - client - Sending presence
+2018-11-12 11:37:58,762 - INFO - client - Connection successful
+2018-11-12 11:37:58,762 - INFO - client - Running threads
+2018-11-12 11:38:05,438 - INFO - client - Initialization
+2018-11-12 11:38:07,347 - INFO - client - Connecting localhost
+2018-11-12 11:38:07,357 - INFO - client - Sending presence
+2018-11-12 11:38:07,359 - INFO - client - Connection successful
+2018-11-12 11:38:07,359 - INFO - client - Running threads
+2018-11-12 11:38:09,678 - INFO - client - Message recieved
+2018-11-12 11:38:14,544 - INFO - client - Message recieved
+2018-11-12 11:39:03,657 - INFO - client - Initialization
+2018-11-12 11:39:05,326 - INFO - client - Connecting localhost
+2018-11-12 11:39:05,326 - INFO - client - Sending presence
+2018-11-12 11:39:05,326 - INFO - client - Connection successful
+2018-11-12 11:39:05,326 - INFO - client - Running threads
+2018-11-12 11:39:17,760 - INFO - client - Initialization
+2018-11-12 11:39:19,329 - INFO - client - Connecting localhost
+2018-11-12 11:39:19,329 - INFO - client - Sending presence
+2018-11-12 11:39:19,329 - INFO - client - Connection successful
+2018-11-12 11:39:19,329 - INFO - client - Running threads
+2018-11-12 11:39:23,482 - INFO - client - Message recieved
+2018-11-12 11:39:49,897 - INFO - client - Message recieved
+2018-11-12 11:39:51,722 - INFO - client - Message recieved
+2018-11-12 11:39:53,112 - INFO - client - Message recieved
+2018-11-12 11:39:56,872 - INFO - client - Message recieved
+2018-11-12 11:39:57,809 - INFO - client - Message recieved
+2018-11-12 11:39:58,610 - INFO - client - Message recieved
+2018-11-12 11:40:01,455 - INFO - client - Message recieved
+2018-11-12 11:40:04,746 - INFO - client - Message recieved
+2018-11-12 11:40:07,218 - INFO - client - Message recieved
