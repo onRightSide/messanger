@@ -172,7 +172,7 @@ class Client:
             label = Label(self.root, text='Radiogram v 1.0')
             label.place(x=200, y=100, width=100)
             button_sign_up = Button(self.root, text='Sign up', bg='grey', fg='black', font='arial 14',
-                                    command=self.renser_sign_up_screen)
+                                    command=self.render_sign_up_screen)
             button_sign_up.place(x=200, y=135, width=100, height=50)
             button_sign_in = Button(self.root, text='Sign in', width=8, height=2, bg='grey', fg='black',
                                     font='arial 14', command=self.render_sign_in_screen)
