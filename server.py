@@ -3,13 +3,7 @@ from threading import Thread
 from select import select
 from socket import socket
 from log import server_log_config
-
-
-ADDRESS = "localhost"
-PORT = 10000
-MESSAGE_SIZE = 1024
-LISTEN_QUEUE_LEN = 10
-SERVER_TIMEOUT = 0
+from configs import ADDRESS, PORT, MESSAGE_SIZE, LISTEN_QUEUE_LEN, SELECT_TIMEOUT
 
 
 class Server:
@@ -18,6 +12,7 @@ class Server:
         self.s = socket()
         self.clients_list = []
         self.clients_dict = {}
+        self.db_handler = self.DBHandler()
         self.id = 0
 
     def run(self) -> None:
@@ -33,12 +28,13 @@ class Server:
                 self.clients_dict.update({client: self.id})
                 self.id += 1
                 server_log_config.logger.info("Client connected")
+                print(self.clients_list)
 
     def get_clients(self) -> None:
         server_log_config.logger.info("Reading clients")
         while True:
             try:
-                readable, _, _ = select(self.clients_list, [], [], 0.1)
+                readable, _, _ = select(self.clients_list, [], [], SELECT_TIMEOUT)
                 if len(readable) > 0:
                     for client in readable:
                         self.read_socket(client)
@@ -86,7 +82,16 @@ class Server:
             if client_id != self.clients_dict.get(client):
                 client.send(json.dumps(message).encode("utf-8"))
 
+    class MessageHandler:
+        def __init__(self):
+            pass
+
+    class DBHandler:
+        def __init__(self):
+            pass
+
 
 server = Server()
+
 server.run()
 
